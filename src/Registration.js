@@ -1,13 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native-paper';
-import Registration from './src/Registration'
 
-export default function App() {
+
+export default function Registration() {
   return (
     <View style={styles.container}>
+    <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
+    Press me
+  </Button>
 
-       <Registration/>  
+  <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
+    Press me
+  </Button>
+  
     </View>
   );
 }
